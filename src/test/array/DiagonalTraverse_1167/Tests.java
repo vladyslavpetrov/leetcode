@@ -18,7 +18,7 @@ public class Tests {
 
     @ParameterizedTest
     @MethodSource("provideTestData")
-    public void testPositive(int[][] input, int[] expected) {
+    public void testTraverse(int[][] input, int[] expected) {
         int[] actual = solution.findDiagonalOrder(input);
 
         Assertions.assertArrayEquals(expected, actual);
